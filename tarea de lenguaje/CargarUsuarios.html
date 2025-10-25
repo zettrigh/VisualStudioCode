@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulario</title>
+</head>
+
+    <style>
+        *{
+            position: relative;
+        }
+        h1{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            text-align: center;
+            padding: 20px 0 25px 0;
+            background-color: black;
+            color: aliceblue;
+        }
+        main{
+            border-radius: 8px;
+            text-align: center;
+            padding: 6% 0% 6% 0%; 
+            margin: 3% 37% 3% 37%;
+            box-shadow: 0 4px 13px rgba(0, 0, 0, 0.4);
+        }
+        .data{
+            margin: 1rem;
+            border-top: none;
+            border-left: none;
+            border-right: none;
+            background:none;
+        }
+        .data:focus{
+            outline: none;
+        }
+        footer{
+            background-color: black;
+            padding: 10px 10px 10px 10px;
+            border: none;
+        }
+        .p1{
+            text-align: left;
+            color: aliceblue;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .p2{
+            text-align: right;
+            color: aliceblue;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin-left: 67%;
+        }
+        .btn-S{
+            margin: 0 0 0 3%;
+            background-color: black;
+            color: aliceblue;
+            border-radius: 5px;
+            font-family: Arial, Helvetica, sans-serif;
+            padding: 0.5rem;
+            border: none;
+        }
+        .btn-R{
+            margin: 0 3% 0 0;
+            background-color: black;
+            color: aliceblue;
+            border-radius: 5px;
+            font-family: Arial, Helvetica, sans-serif;
+            padding: 0.5rem;
+            border: none;
+        }
+        .btn-G{
+            margin-top: 10%;
+        }
+        .btn{
+        background-color: black;
+        border-radius: 10px;
+        text-decoration: none;
+        margin: 0 0 3% 45%;
+        border: none;
+        padding: 0 3% 0 3%; 
+    }
+    p{
+        color: aliceblue;
+        text-decoration: none;
+        border: none;
+        font-size: large;
+    }
+    </style>
+
+    <body>
+        <h1>Cargar Usuarios</h1>
+        <hr>
+        
+        <form method="POST" action="validacion.php" >
+            <main>
+                <input class="data" type="text" placeholder="Name" name="Name" required></br>
+                <input class="data" type="text" placeholder="Lastname" name="Lastname" required></br>
+                <input class="data" type="email" placeholder="example@gamil.com" name="Email" required></br>
+                <div class="btn-G">
+                    <input class="btn-R" type="reset" value="Limpiar Campos">
+                    <input class="btn-S" type="submit" value="Enviar">
+                </div>
+            </main>
+        </form>
+        <button class="btn"><a href="index.html"><p>Volver</p></a></button>
+
+        <footer>
+            <strong class="p1">hecho por jesus pacheco</strong>
+            <strong class="p2">UNEFA - Extencion Guacara</strong>
+        </footer>
+
+    </body>
+</html>
